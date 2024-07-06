@@ -38,6 +38,18 @@ func circleArea(radius float64) float64 {
 	return initials[0], "_"
 }*/
 
+// Pass By Value
+// Non-Pointer Values
+/*func updateName(name string) string {
+	name = "wedge"
+	return name
+}*/
+
+// Pointer Wrapper Values
+/*func updateMenu(menu map[string]float64) {
+	menu["coffee"] = 2.99
+}*/
+
 func main() {
 	// Println Function
 	/*fmt.Println("Hello World")*/
@@ -233,4 +245,18 @@ func main() {
 	for key, value := range phonebook {
 		fmt.Println(key, " - ", value)
 	}*/
+
+	// Pass By Value
+	// Non-Pointer Values
+	/*name := "tifa"
+	name = updateName(name)
+	fmt.Println(name)*/
+
+	// Pointer Wrapper Values
+	/*menu := map[string]float64{
+		"pie":       5.95,
+		"ice cream": 3.99,
+	}
+	updateMenu(menu)
+	fmt.Println(menu)*/
 }
