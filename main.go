@@ -25,6 +25,19 @@ func circleArea(radius float64) float64 {
 	return math.Pi * radius * radius
 }*/
 
+/*func getInitials(name string) (string, string) {
+	s := strings.ToUpper(name)
+	names := strings.Split(s, " ")
+	initials := []string{}
+	for _, value := range names {
+		initials = append(initials, value[:1])
+	}
+	if len(initials) > 1 {
+		return initials[0], initials[1]
+	}
+	return initials[0], "_"
+}*/
+
 func main() {
 	// Println Function
 	/*fmt.Println("Hello World")*/
@@ -187,4 +200,12 @@ func main() {
 	a2 := circleArea(15)
 	fmt.Println(a1, ", ", a2)
 	fmt.Printf("Circle 1 : %0.3f\nCircle 2 : %0.3f", a1, a2)*/
+
+	// More on Functions
+	/*firstName1, secondName1 := getInitials("tifa lockhart")
+	fmt.Println(firstName1, ", ", secondName1)
+	firstName2, secondName2 := getInitials("cloud strife")
+	fmt.Println(firstName2, ", ", secondName2)
+	firstName3, secondName3 := getInitials("barret")
+	fmt.Println(firstName3, ", ", secondName3)*/
 }
