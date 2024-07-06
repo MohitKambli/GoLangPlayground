@@ -103,4 +103,33 @@ func main() {
 	fmt.Println(names)
 	validStringIndex := sort.SearchStrings(names, "mario")
 	fmt.Println(validStringIndex)*/
+
+	// Loops
+	/*x := 0
+	for x < 5 {
+		fmt.Println("Value of X: ", x)
+		x++
+	}*/
+	/*for i := 0; i < 5; i++ {
+		fmt.Println("Value of i: ", i)
+	}*/
+	//names := []string{"mario", "luigi", "yoshi", "peach"}
+	/*for i := 0; i < len(names); i++ {
+		fmt.Println("Name: ", names[i])
+	}*/
+	/*for index, value := range names {
+		fmt.Printf("Index: %v, Value: %v\n", index, value)
+	}*/
+	// Underscore can be used for the option that is not required
+	// Option can either be the index or the actual value
+	// If we don't use a particular option, then we would get an error, hence use underscore
+	/*for _, value := range names {
+		fmt.Printf("Value: %v\n", value)
+	}*/
+	/*for _, value := range names {
+		fmt.Printf("Value: %v\n", value)
+		// Following line doesn't make any changes to the original slice/array
+		value = "new string"
+	}
+	fmt.Println(names)*/
 }
