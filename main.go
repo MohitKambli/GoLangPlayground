@@ -132,4 +132,30 @@ func main() {
 		value = "new string"
 	}
 	fmt.Println(names)*/
+
+	// Booleans & Conditionals
+	/*age := 45
+	fmt.Println(age <= 50)
+	fmt.Println(age >= 50)
+	fmt.Println(age == 45)
+	fmt.Println(age != 50)
+	if age < 50 {
+		fmt.Println("Age is less than 50")
+	} else if age > 50 {
+		fmt.Println("Age is greater than 50")
+	} else {
+		fmt.Println("Age is equal to 50")
+	}*/
+	/*names := []string{"mario", "luigi", "yoshi", "peach", "bowser"}
+	for index, value := range names {
+		if index == 1 {
+			fmt.Println("Continuing at Index: ", index)
+			continue
+		}
+		if index > 2 {
+			fmt.Println("Breaking at Index: ", index)
+			break
+		}
+		fmt.Printf("Value at index %v : %v\n", index, value)
+	}*/
 }
