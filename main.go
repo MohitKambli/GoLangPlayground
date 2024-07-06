@@ -50,6 +50,11 @@ func circleArea(radius float64) float64 {
 	menu["coffee"] = 2.99
 }*/
 
+// Pass By Reference (Pointers)
+/*func updateName(name *string) {
+	*name = "wedge"
+}*/
+
 func main() {
 	// Println Function
 	/*fmt.Println("Hello World")*/
@@ -259,4 +264,13 @@ func main() {
 	}
 	updateMenu(menu)
 	fmt.Println(menu)*/
+
+	// Pointers
+	/*name := "tifa"
+	mName := &name
+	fmt.Println("Memory Address: ", &mName)
+	fmt.Println("Value at Memory Address: ", *mName)
+	fmt.Println(name)
+	updateName(mName)
+	fmt.Println(name)*/
 }
