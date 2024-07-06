@@ -208,4 +208,29 @@ func main() {
 	fmt.Println(firstName2, ", ", secondName2)
 	firstName3, secondName3 := getInitials("barret")
 	fmt.Println(firstName3, ", ", secondName3)*/
+
+	// Maps
+	/*menu := map[string]float64{
+		"soup":           4.99,
+		"pie":            7.99,
+		"salad":          6.99,
+		"toffee pudding": 3.55,
+	}
+	fmt.Println(menu)
+	fmt.Println(menu["pie"])
+	for key, value := range menu {
+		fmt.Println(key, " - ", value)
+	}
+	phonebook := map[int]string{
+		12345: "mario",
+		23456: "luigi",
+		34567: "peach",
+	}
+	fmt.Println(phonebook)
+	fmt.Println(phonebook[23456])
+	// Updating value of one existing key
+	phonebook[34567] = "bowser"
+	for key, value := range phonebook {
+		fmt.Println(key, " - ", value)
+	}*/
 }
