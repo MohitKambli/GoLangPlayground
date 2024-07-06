@@ -70,4 +70,33 @@ func main() {
 	fmt.Println(rangeThree, len(rangeThree))
 	rangeThree = append(rangeThree, 40)
 	fmt.Println(rangeThree, len(rangeThree))*/
+
+	// Strings Package 
+	//greeting := "Hello there friends!"
+	// (Atleast, the following methods of the strings package don't modify the original string)
+	/*fmt.Println(strings.Contains(greeting, "Hello"))
+	// Doesn't alter original string
+	fmt.Println(strings.ReplaceAll(greeting, "Hello", "Hi"))
+	fmt.Println(strings.ToUpper(greeting))
+	fmt.Println(strings.Index(greeting, "ll"))
+	fmt.Println(strings.Split(greeting, " "))
+	// Original Value Remains Unchanged
+	fmt.Println("Original String: ", greeting) */
+
+	// Sort Package
+	/*ages := []int{45, 20, 35, 30, 75, 60, 50, 25}
+	sort.Ints(ages)
+	// Alters the orignal slice/array
+	fmt.Println(ages)
+	// Searches in the sorted slice/array and not in the original array
+	validIntIndex := sort.SearchInts(ages, 60)
+	fmt.Println(validIntIndex)
+	invalidIntIndex := sort.SearchInts(ages, 100)
+	// Doesn't return -1, but instead returns an index which is out of bounds, specifically n
+	fmt.Println(invalidIntIndex)
+	names := []string{"yoshi", "mario", "peach", "bowser", "luigi"}
+	sort.Strings(names)
+	fmt.Println(names)
+	validStringIndex := sort.SearchStrings(names, "mario")
+	fmt.Println(validStringIndex)*/
 }
