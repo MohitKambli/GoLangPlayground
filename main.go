@@ -4,7 +4,26 @@ import (
 	"fmt"
 	"strings"
 	"sort"
+	"math"
 )
+
+/*func sayGreeting(name string) {
+	fmt.Printf("Good Morning %v\n", name)
+}
+
+func sayBye(name string) {
+	fmt.Printf("Good Bye %v\n", name)
+}
+
+func cycleNames(name []string, f func(string)) {
+	for _, value := range name {
+		f(value)
+	}
+}
+
+func circleArea(radius float64) float64 {
+	return math.Pi * radius * radius
+}*/
 
 func main() {
 	// Println Function
@@ -158,4 +177,14 @@ func main() {
 		}
 		fmt.Printf("Value at index %v : %v\n", index, value)
 	}*/
+
+	// Functions
+	/*sayGreeting("mario")
+	sayBye("luigi")
+	cycleNames([]string{"cloud", "tifa", "barret"}, sayGreeting)
+	cycleNames([]string{"cloud", "tifa", "barret"}, sayBye)
+	a1 := circleArea(10.5)
+	a2 := circleArea(15)
+	fmt.Println(a1, ", ", a2)
+	fmt.Printf("Circle 1 : %0.3f\nCircle 2 : %0.3f", a1, a2)*/
 }
