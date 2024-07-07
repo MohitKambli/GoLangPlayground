@@ -55,7 +55,7 @@ func circleArea(radius float64) float64 {
 	*name = "wedge"
 }*/
 
-// Struct
+// For structs, Pointers are automatically dereferenced
 /*type bill struct {
 	name  string
 	items map[string]float64
@@ -66,14 +66,14 @@ func circleArea(radius float64) float64 {
 /*func newBill(name string) bill {
 	b := bill{
 		name:  name,
-		items: map[string]float64{"pie": 5.99, "cake": 3.99},
+		items: map[string]float64{},
 		tip:   0,
 	}
 	return b
 }*/
 
 // Format the Bill
-/*func (b bill) format() string {
+/*func (b *bill) format() string {
 	fs := "Bill Breakdown: \n"
 	var total float64 = 0
 	// List Items
@@ -81,9 +81,24 @@ func circleArea(radius float64) float64 {
 		fs += fmt.Sprintf("%-25v ...$%v \n", key+": ", value)
 		total += value
 	}
+
+	// Tip
+	fs += fmt.Sprintf("%-25v ...$%0.2f \n", "Tip: ", b.tip)
+
 	// Total
-	fs += fmt.Sprintf("%-25v ...$%0.2f", "Total: ", total)
+	fs += fmt.Sprintf("%-25v ...$%0.2f", "Total: ", total+b.tip)
+
 	return fs
+}*/
+
+// Update Tip
+/*func (b *bill) updateTip(tip float64) {
+	b.tip = tip
+}*/
+
+// Add An Item to Bill
+/*func (b *bill) addItem(name string, price float64) {
+	b.items[name] = price
 }*/
 
 func main() {
@@ -305,8 +320,18 @@ func main() {
 	updateName(mName)
 	fmt.Println(name)*/
 
-	// Struct
-	/*myBill := newBill("Mario's Bill")
-	fmt.Println(myBill.format())
-	fmt.Println(myBill)*/
+	// Bill Initialization (Struct)
+	//myBill := newBill("Mario's Bill")
+
+	// Adding Items to the Bill
+	/*myBill.addItem("Onion Soup", 4.50)
+	myBill.addItem("Veg Pie", 8.95)
+	myBill.addItem("Toffee Pudding", 4.95)
+	myBill.addItem("Coffee", 3.25)*/
+
+	// Updating the Bill with Tip
+	//myBill.updateTip(10)
+
+	// Printing the Formatted Bill
+	//fmt.Println(myBill.format())
 }
