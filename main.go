@@ -55,6 +55,37 @@ func circleArea(radius float64) float64 {
 	*name = "wedge"
 }*/
 
+// Struct
+/*type bill struct {
+	name  string
+	items map[string]float64
+	tip   float64
+}*/
+
+// Make new Bills
+/*func newBill(name string) bill {
+	b := bill{
+		name:  name,
+		items: map[string]float64{"pie": 5.99, "cake": 3.99},
+		tip:   0,
+	}
+	return b
+}*/
+
+// Format the Bill
+/*func (b bill) format() string {
+	fs := "Bill Breakdown: \n"
+	var total float64 = 0
+	// List Items
+	for key, value := range b.items {
+		fs += fmt.Sprintf("%-25v ...$%v \n", key+": ", value)
+		total += value
+	}
+	// Total
+	fs += fmt.Sprintf("%-25v ...$%0.2f", "Total: ", total)
+	return fs
+}*/
+
 func main() {
 	// Println Function
 	/*fmt.Println("Hello World")*/
@@ -273,4 +304,9 @@ func main() {
 	fmt.Println(name)
 	updateName(mName)
 	fmt.Println(name)*/
+
+	// Struct
+	/*myBill := newBill("Mario's Bill")
+	fmt.Println(myBill.format())
+	fmt.Println(myBill)*/
 }
