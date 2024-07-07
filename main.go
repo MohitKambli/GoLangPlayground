@@ -101,6 +101,66 @@ func circleArea(radius float64) float64 {
 	b.items[name] = price
 }*/
 
+// Save Bill
+/*func (b *bill) save() {
+	data := [] byte {b.format()}
+	err := os.WriteFile("bills/"+b.name+".txt", data, 0644)
+	if err != nil {
+		panic(err)
+	}
+	fmt.Println("Bill was saved to file")
+}*/
+
+// Creating a Bill
+/*func createBill() bill {
+	reader := bufio.NewReader(os.Stdin)
+	fmt.Print("Create a new bill name: ")
+	name, _ := getInput("Create a new bill name: ", reader)
+	b := newBill(name)
+	fmt.Println("Created the bill - ", b.name)
+	return b
+}*/
+
+// Fetching Input from User
+/*func getInput(prompt string, r *bufio.Reader) (string, error) {
+	fmt.Print(prompt)
+	input, err := r.ReadString('\n')
+	return strings.TrimSpace(input), err
+}*/
+
+/*func promptOptions(b bill) {
+	reader := bufio.NewReader(os.Stdin)
+	opt, _ := getInput("Choose Option (a - add item, s - save bill, t - add tip): ", reader)
+	switch opt {
+		case "a":
+			name, _ := getInput("Item Name: ", reader)
+			price, _ := getInput("Item Price: ", reader)
+			p, err := strconv.ParseFloat(price, 64)
+			if err != nil {
+				fmt.Println("The price must be a number")
+				promptOptions(b)
+			}
+			b.addItem(name, p)
+			fmt.Println("Item Added - "name, price)
+			promptOptions(b)
+		case "t":
+			tip, _ := getInput("Tip Amount: ", reader)
+			t, err := strconv.ParseFloat(tip, 64)
+			if err != nil {
+				fmt.Println("The price must be a number")
+				promptOptions(b)
+			}
+			b.updateTip(t)
+			fmt.Println("Tip Added - "tip)
+			promptOptions(b)
+		case "s":
+			b.save()
+			fmt.Println("You chose to save the bill", b.name)
+		default:
+			fmt.Println("You chose an invalid option!")
+	}
+}*/
+
 func main() {
 	// Println Function
 	/*fmt.Println("Hello World")*/
@@ -321,17 +381,6 @@ func main() {
 	fmt.Println(name)*/
 
 	// Bill Initialization (Struct)
-	//myBill := newBill("Mario's Bill")
-
-	// Adding Items to the Bill
-	/*myBill.addItem("Onion Soup", 4.50)
-	myBill.addItem("Veg Pie", 8.95)
-	myBill.addItem("Toffee Pudding", 4.95)
-	myBill.addItem("Coffee", 3.25)*/
-
-	// Updating the Bill with Tip
-	//myBill.updateTip(10)
-
-	// Printing the Formatted Bill
-	//fmt.Println(myBill.format())
+	/*myBill := createBill()
+	promptOptions(myBill)*/
 }
